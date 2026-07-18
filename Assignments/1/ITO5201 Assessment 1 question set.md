@@ -35,14 +35,14 @@ class KnnRegressor(BaseEstimator):
 
 Hint: You can closely follow the implementation from Activity1.1 of the KNN classifier. You cannot `use sklearn.neighbors.KNeighborsRegressor` to solve this task.
 
-**Note**: Inheriting from `BaseEstimator` is not strictly required, but allows to use the imple\mentation with utility functions like `sklearn.model_selection.cross validate`.
+**Note**: Inheriting from `BaseEstimator` is not strictly required, but allows to use the implementation with utility functions like `sklearn.model_selection.cross validate`.
 
 **II** To test your implementation, load the datasets `diabetes` and `california housing` through the functions `load_diabetes` and `fetch_california_housing`, both of which are available in the module sklearn.datasets. For both datasets, perform a training/test split (using a fraction of 0.6 of the data as training data), fit your KNN regressor to the training portion (using some guess for a good value of k), and report the training and test errors.
 
 ### Question 2 [L-fold Cross Validation, 5+5+5=15 Marks]
 
-**I** Implement a L-Fold Cross Validation (CV) scheme using the scikit-learn convention for
-datasplitters, i.e., using the followingskeleton. Note that this is usually referred to as K-fold cross-validation. We are simply using the symbol L here to differentiate the cross validation parameter from the number of neighbours in K-nearest neighbours.
+**I** Implement a L-Fold Cross Validation (CV) scheme using the scikit-learn convention for datasplitters, i.e., using the following skeleton. 
+Note that this is usually referred to as K-fold cross-validation. We are simply using the symbol L here to differentiate the cross validation parameter from the number of neighbours in K-nearest neighbours.
 
 ```python
 class LFold:
